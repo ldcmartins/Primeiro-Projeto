@@ -30,6 +30,9 @@
 body {
     background: var(--bg-url) no-repeat, top center/cover;
     background-size: cover;
+    height: 100vh;
+    /* VH é todo o espaço vísivel mesmo
+    quando você diminui a tela */
 }
 
 body *{
@@ -209,5 +212,16 @@ footer, a {
     padding: 24px 0;
     text-align: center;
     font-size:14px;
+
+    }
+
+
+    /*media queries */
+    @media (min-width: 700px) {
+         :root {
+            --bg-url: url(assets/bg-mobile.jpg);         }
+         .light {
+            --bg-url: url(assets/bg-mobile-light.jpg);
+        }
 
     }
