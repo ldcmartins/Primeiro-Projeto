@@ -45,7 +45,7 @@ font-family: "Inter", sans-serif;
 
 #container {
 
-    width: 360px;
+    width: 100%;
     margin: auto;
     margin-top: 56px;
     margin-left: auto;
@@ -53,6 +53,7 @@ font-family: "Inter", sans-serif;
     margin-right: auto;
     margin: 56px auto 0px auto;
     padding: 24px;
+    max-width: 588px;
     
 }
 
