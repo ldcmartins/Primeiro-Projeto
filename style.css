@@ -109,10 +109,20 @@ transform: translateY(-50%);
 }
 
 .light #switch button {
+    animation: slide-in 0.2s forwards;
+    /* o forwards é para o botão deslizar e ficar */
 
-    right: 0;
-    left: initial;
 }
+
+#switch button {
+    animation: slide-out 0.2s forwards;
+    /* o forwards é para o botão deslizar e ficar */
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color)
+}
+
 
 #switch span {
 
@@ -126,11 +136,6 @@ backdrop-filter: blur(4px);
 border-radius: 9999px;
 
 }
-
-
-
-
-
 
 ul {
 
@@ -205,8 +210,6 @@ ul li a:hover {
 }
 
 
-
-
 footer, a {
 
     padding: 24px 0;
@@ -224,4 +227,24 @@ footer, a {
             --bg-url: url(assets/bg-mobile-light.jpg);
         }
 
+    }
+
+
+    /*animation */
+    @keyframes slide-in {
+        from {
+            left:0;
+        }
+        to {
+            left: 50%;
+        }
+    }
+
+    @keyframes slide-out {
+        from {
+            left:50%;
+        }
+        to {
+            left:0;
+        }
     }
