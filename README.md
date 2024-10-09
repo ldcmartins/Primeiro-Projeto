@@ -2,6 +2,7 @@
 
 <p align="center">
 Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+<br> https://ldcmartins.github.io/Primeiro-Projeto/
 </p>
 
 <p align="center">
